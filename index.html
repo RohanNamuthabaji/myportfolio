@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namuthabaji Rohan — SDE</title>
+
+  <!-- ✏️ Edit: Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">NR</div>
+      <div class="preloader-bar"><span></span></div>
+      <p class="preloader-text">Loading portfolio…</p>
+    </div>
+  </div>
+
+  <!-- ===================== SCROLL PROGRESS BAR ===================== -->
+  <div id="scroll-progress"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <!-- ✏️ Edit: update nav links if you rename sections -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">NR</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#profiles">Profiles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <!-- ✏️ Edit: name, title, tagline, CTA links -->
+  <section id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-content">
+      <p class="hero-greeting reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">
+        <span class="name-first">Namuthabaji</span>
+        <span class="name-last">Rohan</span>
+      </h1>
+      <div class="hero-title reveal">
+        <span class="typed-prefix">I'm a </span>
+        <span id="typed-text"></span><span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-tagline reveal">
+        Building robust backends, cracking DSA, and designing scalable systems — one commit at a time.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <!-- ✏️ Edit: summary text, stats -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-portrait reveal">
+          <div class="portrait-frame">
+            <!-- ✏️ Edit: replace with your image: <img src="assets/photo.jpg" alt="Rohan"> -->
+            <div class="portrait-placeholder">
+              <span>NR</span>
+            </div>
+            <div class="portrait-border"></div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="about-lead">Software Development Engineer</p>
+          <p class="about-body">
+            Software Development Engineer with strong expertise in Data Structures and Algorithms,
+            specializing in backend development and scalable systems. Experienced in designing
+            high-performance REST APIs and full-stack applications using Java and Python.
+          </p>
+          <p class="about-body">
+            Passionate about solving complex algorithmic challenges and building systems that scale.
+            I thrive at the intersection of clean code, performance, and elegant system design.
+          </p>
+          <div class="about-tags">
+            <span>Backend</span><span>DSA</span><span>System Design</span>
+            <span>REST APIs</span><span>Java</span><span>Python</span>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="margin-top:2rem;">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <!-- ✏️ Edit: skill names and percentages -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-wrapper">
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item" data-pct="92">
+              <div class="skill-bar-top"><span>Java</span><span class="pct-label">92%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-pct="85">
+              <div class="skill-bar-top"><span>Python</span><span class="pct-label">85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-pct="75">
+              <div class="skill-bar-top"><span>C</span><span class="pct-label">75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fas fa-brain"></i> Core CS</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item" data-pct="95">
+              <div class="skill-bar-top"><span>Data Structures</span><span class="pct-label">95%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-pct="90">
+              <div class="skill-bar-top"><span>Algorithms</span><span class="pct-label">90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-pct="88">
+              <div class="skill-bar-top"><span>OOP</span><span class="pct-label">88%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fas fa-server"></i> Backend</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item" data-pct="80">
+              <div class="skill-bar-top"><span>Node.js</span><span class="pct-label">80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-pct="78">
+              <div class="skill-bar-top"><span>Express.js</span><span class="pct-label">78%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-pct="88">
+              <div class="skill-bar-top"><span>REST APIs</span><span class="pct-label">88%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fas fa-palette"></i> Frontend</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item" data-pct="82">
+              <div class="skill-bar-top"><span>HTML</span><span class="pct-label">82%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-pct="78">
+              <div class="skill-bar-top"><span>CSS</span><span class="pct-label">78%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-pct="75">
+              <div class="skill-bar-top"><span>JavaScript</span><span class="pct-label">75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fas fa-database"></i> Databases</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item" data-pct="85">
+              <div class="skill-bar-top"><span>MySQL</span><span class="pct-label">85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+            <div class="skill-bar-item" data-pct="72">
+              <div class="skill-bar-top"><span>MongoDB</span><span class="pct-label">72%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title"><i class="fas fa-tools"></i> Tools & Concepts</h3>
+          <div class="skills-tag-cloud">
+            <span>Git</span><span>GitHub</span><span>Postman</span><span>AWS</span>
+            <span>System Design</span><span>Scalability</span><span>API Optimization</span><span>Caching</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <!-- ✏️ Edit: project cards — titles, descriptions, tech stacks, links -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project A -->
+        <div class="project-card reveal" data-project="parking">
+          <div class="project-card-inner">
+            <div class="project-number">01</div>
+            <div class="project-icon"><i class="fas fa-parking"></i></div>
+            <h3 class="project-title">Smart Parking System</h3>
+            <p class="project-desc">Full-stack application with real-time slot tracking, reducing manual effort by 40%.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>Flask</span><span>MySQL</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-details" onclick="openModal('parking')">View Details</button>
+            </div>
+          </div>
+          <div class="project-stat">−40% manual effort</div>
+        </div>
+
+        <!-- Project B -->
+        <div class="project-card reveal featured" data-project="nutri">
+          <div class="project-card-inner">
+            <div class="project-number">02</div>
+            <div class="project-icon"><i class="fas fa-apple-alt"></i></div>
+            <h3 class="project-title">NutriAI</h3>
+            <p class="project-desc">AI-powered diet planner using BMI & TDEE calculations. Improved response time by 30%.</p>
+            <div class="project-tech">
+              <span>Python</span><span>AI/ML</span><span>HTML</span><span>CSS</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-details" onclick="openModal('nutri')">View Details</button>
+              <!-- ✏️ Edit: live URL -->
+              <a href="https://rohannamuthabaji.github.io/NutriAi/" target="_blank" class="btn-live">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+            </div>
+          </div>
+          <div class="project-stat">−30% response time</div>
+          <div class="featured-tag">Featured</div>
+        </div>
+
+        <!-- Project C -->
+        <div class="project-card reveal" data-project="attendance">
+          <div class="project-card-inner">
+            <div class="project-number">03</div>
+            <div class="project-icon"><i class="fas fa-clipboard-check"></i></div>
+            <h3 class="project-title">Attendance Management</h3>
+            <p class="project-desc">Automated attendance tracking system reducing manual errors by 50%.</p>
+            <div class="project-tech">
+              <span>Java</span><span>MySQL</span><span>REST API</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-details" onclick="openModal('attendance')">View Details</button>
+            </div>
+          </div>
+          <div class="project-stat">−50% errors</div>
+        </div>
+
+        <!-- Project D -->
+        <div class="project-card reveal" data-project="nlp">
+          <div class="project-card-inner">
+            <div class="project-number">04</div>
+            <div class="project-icon"><i class="fas fa-language"></i></div>
+            <h3 class="project-title">Text Classification (NLP)</h3>
+            <p class="project-desc">Multi-model text classification pipeline using TF-IDF, Logistic Regression, and Naive Bayes.</p>
+            <div class="project-tech">
+              <span>Python</span><span>scikit-learn</span><span>NLP</span><span>TF-IDF</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-details" onclick="openModal('nlp')">View Details</button>
+            </div>
+          </div>
+          <div class="project-stat">NLP Pipeline</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECT MODALS ===================== -->
+  <!-- ✏️ Edit: modal content for each project -->
+  <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- ===================== ACHIEVEMENTS SECTION ===================== -->
+  <!-- ✏️ Edit: counter values and labels -->
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fas fa-code"></i></div>
+          <div class="counter" data-target="150">0</div>
+          <span class="counter-plus">+</span>
+          <p>LeetCode Problems Solved</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fas fa-project-diagram"></i></div>
+          <div class="counter" data-target="5">0</div>
+          <span class="counter-plus">+</span>
+          <p>Projects Built</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="counter-decimal">8.5</div>
+          <p>B.Tech CGPA</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+          <div class="counter" data-target="5">0</div>
+          <span class="counter-plus">+</span>
+          <p>Certifications</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION SECTION ===================== -->
+  <!-- ✏️ Edit: education timeline entries -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-period">2023 — 2027</div>
+            <h3 class="timeline-title">B.Tech — Computer Science & Engineering</h3>
+            <p class="timeline-org">Current University</p><!-- ✏️ Edit: University name -->
+            <div class="timeline-grade">CGPA: 8.5</div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-period">Intermediate</div>
+            <h3 class="timeline-title">MPC — Mathematics, Physics, Chemistry</h3>
+            <p class="timeline-org">Board of Intermediate Education</p><!-- ✏️ Edit: College name -->
+            <div class="timeline-grade">GPA: 8.2</div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-period">Secondary</div>
+            <h3 class="timeline-title">SSC — Secondary School Certificate</h3>
+            <p class="timeline-org">Board of Secondary Education</p><!-- ✏️ Edit: School name -->
+            <div class="timeline-grade">GPA: 10.0</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS SECTION ===================== -->
+  <!-- ✏️ Edit: certification cards -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fab fa-aws"></i></div>
+          <h4>AWS Academy</h4>
+          <p>Cloud Foundations</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+          <h4>Cisco</h4>
+          <p>Networking Essentials</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>Cisco</h4>
+          <p>Cybersecurity Fundamentals</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-robot"></i></div>
+          <h4>AI-ML Internship</h4>
+          <p>2024</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+          <h4>AlgoUniversity</h4>
+          <p>DSA & Algorithms</p>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-book"></i></div>
+          <h4>Saylor Academy</h4>
+          <p>Computer Science</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CODING PROFILES SECTION ===================== -->
+  <!-- ✏️ Edit: profile links -->
+  <section id="profiles" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">07</span>
+        <h2 class="section-title">Coding Profiles</h2>
+      </div>
+      <div class="profiles-grid">
+        <a href="https://leetcode.com/u/Rohan_1064/" target="_blank" class="profile-card reveal">
+          <div class="profile-icon leet"><i class="fas fa-code"></i></div>
+          <div class="profile-info">
+            <h4>LeetCode</h4>
+            <p>@Rohan_1064</p>
+            <span class="profile-stat">150+ problems</span>
+          </div>
+          <i class="fas fa-arrow-right profile-arrow"></i>
+        </a>
+        <a href="https://github.com/RohanNamuthabaji" target="_blank" class="profile-card reveal">
+          <div class="profile-icon gh"><i class="fab fa-github"></i></div>
+          <div class="profile-info">
+            <h4>GitHub</h4>
+            <p>@RohanNamuthabaji</p>
+            <span class="profile-stat">Projects & Code</span>
+          </div>
+          <i class="fas fa-arrow-right profile-arrow"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rohan-namuthabaji-3b418a294" target="_blank" class="profile-card reveal">
+          <div class="profile-icon li"><i class="fab fa-linkedin-in"></i></div>
+          <div class="profile-info">
+            <h4>LinkedIn</h4>
+            <p>Rohan Namuthabaji</p>
+            <span class="profile-stat">Connect with me</span>
+          </div>
+          <i class="fas fa-arrow-right profile-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <!-- ✏️ Edit: email, phone -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">08</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <p class="contact-lead">Let's build something together.</p>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span>Email</span>
+              <a href="mailto:rohannamuthabaji@gmail.com">rohannamuthabaji@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <span>Phone</span>
+              <a href="tel:+919346998484">+91 9346998484</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span>Location</span>
+              <p>Warangal, Telangana</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" onsubmit="handleFormSubmit(event)">
+          <!-- ✏️ Edit: form — currently frontend-only. To make it functional, add Formspree or EmailJS -->
+          <div class="form-group">
+            <input type="text" id="form-name" placeholder="Your Name" required />
+            <label for="form-name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="form-email" placeholder="Email Address" required />
+            <label for="form-email">Email Address</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="form-subject" placeholder="Subject" required />
+            <label for="form-subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="form-message" rows="5" placeholder="Your Message" required></textarea>
+            <label for="form-message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <div id="form-success" class="form-success" style="display:none;">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <!-- ✏️ Edit: social links, copyright year -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">NR</div>
+      <p class="footer-tagline">Built with precision. Deployed with purpose.</p>
+      <div class="footer-social">
+        <a href="https://github.com/RohanNamuthabaji" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/rohan-namuthabaji-3b418a294" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://leetcode.com/u/Rohan_1064/" target="_blank" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+        <a href="mailto:rohannamuthabaji@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Namuthabaji Rohan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
