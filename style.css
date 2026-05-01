@@ -319,11 +319,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero-name {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(3.5rem, 9vw, 8rem);
-  line-height: 1;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.1;
   letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
   display: block;
+  white-space: nowrap;
 }
 .name-first {
   display: block;
@@ -1233,8 +1234,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .nav-links a { font-size: 1rem; letter-spacing: 0.2em; }
   .nav-toggle { display: flex; z-index: 1000; position: relative; }
 
-  .hero-name { font-size: clamp(2.8rem, 12vw, 5rem); }
-
+  .hero-name {
+  font-size: clamp(2.8rem, 12vw, 5rem);
+  white-space: normal;
+  text-align: center;
+}
   .projects-grid { grid-template-columns: 1fr; gap: 1rem; }
 
   .achievements-grid { grid-template-columns: repeat(2, 1fr); }
