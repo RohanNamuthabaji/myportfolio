@@ -288,7 +288,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 7rem 2rem 4rem;
+  padding: 5rem 1rem 3rem;
 }
 
 /* Noise texture overlay */
@@ -1235,9 +1235,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .nav-toggle { display: flex; z-index: 1000; position: relative; }
 
   .hero-name {
-  font-size: clamp(2.8rem, 12vw, 5rem);
+  font-size: clamp(2.2rem, 10vw, 3.5rem);
   white-space: normal;
   text-align: center;
+  line-height: 1.2;
+}
+.hero-content {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hero-title {
+  text-align: center;
+}
+
+.hero-tagline {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-cta {
+  justify-content: center;
 }
   .projects-grid { grid-template-columns: 1fr; gap: 1rem; }
 
